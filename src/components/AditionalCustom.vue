@@ -70,7 +70,7 @@
             <article v-if="explain === 5">
                 <p>
                     Dado que es mi primer proyecto, realizado tras sólo cuatro meses de curso, sé que hay
-                    mucho que mejorar, en especial en el código del frontend y, sobre todo, en el diseño. 
+                    mucho que mejorar, optimizando más el código del frontend y, sobre todo, mejorando el diseño. 
                     </p>
                   <p>La web es responsive, pero me gustaría mejorar
                     la accesibilidad y el aspecto general de la misma.
@@ -114,6 +114,10 @@ button.item{
     font-weight: 600;
     font-size: 0.5rem;
     padding: 0.2rem;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 button.marked{

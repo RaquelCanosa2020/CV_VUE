@@ -1,18 +1,18 @@
 <template>
 <div>
   <header>
-    <img id="me" src="../assets/unnamed.gif" alt="Avatar"/>
+    <img id="me" src="../assets/me.png" alt="Avatar"/>
     <article id="header">
       <section id="name">
     <h1>
-      NOMBRE
+      Raquel Canosa Raña
     </h1>
     <h2>Programadora Full Stack</h2>
     </section>
     <section id="contact">
-      <a id="mail" href="#">correo</a>
-      <a id="lkn" href="https://es.linkedin.com">lkdn</a>
-      <a id="git" href="https://github.com">github</a>
+      
+      <a id="lkn" href="https://es.linkedin.com/in/raquelcanosara">lkdn</a>
+      <a id="git" href="https://github.com/RaquelCanosa2020">github</a>
 
            
     </section>

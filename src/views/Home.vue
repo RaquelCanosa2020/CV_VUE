@@ -1,4 +1,5 @@
 <template>
+
   <div class="home">
     <div class="group">
     <section id="objective">
@@ -35,7 +36,7 @@
         <trainingcustom :courses="complementary"/>
     
        <h3>
-          <img src="../assets/traducir.png"/> <span>Idiomas</span>
+          <img src="../assets/traducir.png" alt="letras" /> <span>Idiomas</span>
         </h3>
         <languajescustom :langs="languajes"/>
     </section>
@@ -45,11 +46,11 @@
     <h3>
           <img src="../assets/codificacion.png" alt="codigo"/> <span>Proyecto fin de Bootcamp</span>
         </h3>
-      <p>De julio a septiembre 2020. Web de reserva de espacio en playas</p>
+      <p id="web">Jul.2020 - Sept.2020. <strong>Web de reserva de espacio en playas</strong></p>
       <technologiescustom :techs="techs"/>
 
       <article id="link">
-        <button id="info" @click="getWord">{{word}} info</button>
+        <button id="info" @click="getWord">{{word}}</button>
         <a id="video" :href="links.link2">Ver vídeo</a>
         <a id="code" :href="links.link3">Código</a>
       </article>
@@ -70,8 +71,10 @@
     </section>
     
     </div>
+
     
   </div>
+  
 </template>
 
 <script>
@@ -81,6 +84,7 @@ import languajescustom from "@/components/LanguajesCustom";
 import experiencecustom from "@/components/ExperienceCustom";
 import technologiescustom from "@/components/TechnologiesCustom";
 import aditionalcustom from "@/components/AditionalCustom"
+
 
 import {aptitudes, academic, complementary, languajes, experience, links, technologies2} from "@/api/api.js";
 
@@ -92,7 +96,8 @@ export default {
     languajescustom,
     experiencecustom,
     technologiescustom,
-    aditionalcustom
+    aditionalcustom,
+    
     
   },
   data(){
@@ -105,16 +110,16 @@ export default {
       links: links,
       techs : technologies2,
       aditional: false,
-      word: "Más"
+      word: "Más info >>"
      }
   },
+  
   methods:{
     getWord(){
       this.aditional = ! this.aditional;
-      this.aditional ? this.word = "Menos" : this.word = "Más";
-     
-    }
-  },
+      this.aditional ? this.word = "Menos info <<" : this.word = "Más info >>";
+     }
+    },
   
 }
 
@@ -127,7 +132,7 @@ img{
 }
 
 h3{
-  border-bottom: 2px solid  rgba(68, 68, 218, 0.486);
+  border-bottom: 2px solid  rgb(68, 68, 218);
 }
 
 
@@ -142,6 +147,10 @@ article#link{
 }
 button#info{
   color: rgb(68, 68, 218);
+}
+
+p#web{
+  text-decoration: underline;
 }
 
 @media (min-width: 700px){
