@@ -44,26 +44,27 @@ font-family: Helvetica, sans-serif;
   #nav a {
     font-weight: bold;
     color: #2c3e50;
-
   }
   
   #nav a.router-link-exact-active {
     color: #4262b9;
   }
-
     
   header{
     background-color: rgb(68, 68, 218);
     display:flex;
     justify-content: space-around;
   }
+
   h1, h2{
   color: white;
   }
+
   h1{
     font-size: 1rem;
     padding-top: 1rem;
   }
+
   h2{
     font-size: 0.9rem;
   }
@@ -96,19 +97,19 @@ font-family: Helvetica, sans-serif;
     background-image: url(assets/github.png);
    }
    
-
    h3{
     font-size: 1rem;
-  }
-  p, li, a, button{
+    }
+
+    p, li, a, button{
     font-size: 0.8rem;
     line-height: 1.5em;
-  }
-  img#me{
+    }
+
+    img#me{
     max-width: 80px;
-   object-fit: contain;
-    
-      }
+    object-fit: contain;
+    }
   
    @media(min-width: 700px){
      header{

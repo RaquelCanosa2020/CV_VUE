@@ -7,11 +7,9 @@
                
                <section>
                    
-                    <p> <strong>{{course.title}}</strong> </p>
-                <p>{{course.data}}</p>
-              
-                <p v-if="course.tech">
-                    <technologiescustom :techs="techs"/>
+                    <p> <strong>{{course.title}}</strong> {{course.data}}</p>
+                               <p v-if="course.techs">
+                    <technologiescustom :techs="course.techs"/>
                 </p>
                </section>
                
@@ -21,7 +19,7 @@
 </template>
 
 <script>
-import {technologies1} from "@/api/api.js";
+
 import technologiescustom from "@/components/TechnologiesCustom";
 
 export default {
@@ -32,11 +30,8 @@ export default {
     props:{
         courses: Array,
     },
-    data(){
-        return {
-            techs : technologies1
-        }
-    }
+    
+    
 }
 </script>
 <style scoped>

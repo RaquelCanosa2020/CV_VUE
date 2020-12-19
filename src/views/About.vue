@@ -13,9 +13,19 @@
    <li> Iconos diseñados por <a href="https://www.flaticon.es/autores/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     </li>
     </ul>
+    
 
   </div>
 </template>
+
+<script>
+
+export default {
+  name: "About",
+  
+}
+</script>
+
 <style scoped>
 div.about{
   color: rgb(68, 68, 218);
@@ -44,6 +54,7 @@ img{
   margin: auto;
  
 }
+
 @media(min-width: 700px){
   ul{
   margin: 1rem 2rem;}

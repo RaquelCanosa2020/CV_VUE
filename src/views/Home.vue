@@ -1,8 +1,10 @@
 <template>
 
   <div class="home">
+
     <div class="group">
-    <section id="objective">
+
+      <section id="objective">
       
         <h3>
           <img src="../assets/orientacion.png" alt="diana"/>
@@ -13,65 +15,63 @@
           anterior.
         </p>
       
-    </section>
-    <section id="aptitudes">
+      </section>
+
+      <section id="aptitudes">
        <h3>
           <img src="../assets/idea.png" alt="bombilla"/> <span>Aptitudes</span>
         </h3>
         <aptitudcustom :aptitudes="aptitudes"/>
-    </section>
+      </section>
+
     </div>
+
     <div class="group">
-    <section>
+
+      <section>
       <h3>
-          <img src="../assets/libro.png" alt="libro"/> <span>Formación académica</span>
+          <img src="../assets/codificacion.png" alt="pantalla con código"/> <span>Formación programación</span>
         </h3>
-        <trainingcustom :courses="academic"/>
-    </section>
-    <section>
+        <trainingcustom :courses="programming"/>
+      </section>
+
+      <section>
        <h3>
-          <img src="../assets/libro-electronico.png" alt="libro-electronico"/> <span>Formación complementaria</span>
+          <img src="../assets/libro-electronico.png" alt="libro-electronico"/> <span>Otra formación</span>
         </h3>
 
-        <trainingcustom :courses="complementary"/>
+        <trainingcustom :courses="anotherStudies"/>
     
        <h3>
           <img src="../assets/traducir.png" alt="letras" /> <span>Idiomas</span>
         </h3>
+
         <languajescustom :langs="languajes"/>
-    </section>
+      </section>
+
     </div>
+
     <div class="group">
+
       <section>
-    <h3>
-          <img src="../assets/codificacion.png" alt="codigo"/> <span>Proyecto fin de Bootcamp</span>
+        <h3>
+          <img src="../assets/startup.png" alt="pantalla con cohete"/> <span>Proyectos Programación</span>
         </h3>
-      <p id="web">Jul.2020 - Sept.2020. <strong>Web de reserva de espacio en playas</strong></p>
-      <technologiescustom :techs="techs"/>
 
-      <article id="link">
-        <button id="info" @click="getWord">{{word}}</button>
-        <a id="video" :href="links.link2">Ver vídeo</a>
-        <a id="code" :href="links.link3">Código</a>
-      </article>
-
-  <article v-if="aditional">
-    <aditionalcustom/>
-  </article>
-
+        <projectscustom :projects="projects"/>
+    
       </section>
       
-    <section>
+      <section>
     
        <h3>
           <img src="../assets/maleta.png" alt="maletin"/> <span>Experiencia profesional</span>
         </h3>
         <experiencecustom :experiences="experiences"/>
        
-    </section>
+      </section>
     
     </div>
-
     
   </div>
   
@@ -82,11 +82,10 @@ import aptitudcustom from "@/components/AptitudCustom";
 import trainingcustom from "@/components/TrainingCustom";
 import languajescustom from "@/components/LanguajesCustom";
 import experiencecustom from "@/components/ExperienceCustom";
-import technologiescustom from "@/components/TechnologiesCustom";
-import aditionalcustom from "@/components/AditionalCustom"
+import projectscustom from "@/components/ProjectsCustom";
 
+import {aptitudes, programming, anotherStudies, languajes, experience, projects} from "@/api/api.js";
 
-import {aptitudes, academic, complementary, languajes, experience, links, technologies2} from "@/api/api.js";
 
 export default {
   name: 'Home',
@@ -95,39 +94,25 @@ export default {
     trainingcustom,
     languajescustom,
     experiencecustom,
-    technologiescustom,
-    aditionalcustom,
-    
-    
+    projectscustom
   },
   data(){
     return{
       aptitudes: aptitudes,
-      academic: academic,
-      complementary: complementary,
+      programming: programming,
+      anotherStudies: anotherStudies,
       languajes: languajes,
       experiences: experience,
-      links: links,
-      techs : technologies2,
-      aditional: false,
-      word: "Más info >>"
+      projects: projects
      }
-  },
-  
-  methods:{
-    getWord(){
-      this.aditional = ! this.aditional;
-      this.aditional ? this.word = "Menos info <<" : this.word = "Más info >>";
-     }
-    },
-  
+  }
 }
 
 </script>
 
 <style scoped>
 img{
-  width: 40px;
+  width: 30px;
     
 }
 
@@ -140,20 +125,17 @@ section{
     margin: 2rem 2rem 1rem 2rem;
     text-align: left;
 }
-article#link{
-  display: flex;
-  justify-content: space-around;
-
-}
-button#info{
-  color: rgb(68, 68, 218);
-}
-
-p#web{
-  text-decoration: underline;
-}
 
 @media (min-width: 700px){
+  div.home{
+    padding: 1rem;
+  }
+  img{
+  width: 40px;
+}
+}
+
+@media (min-width: 1025px){
   div.group{
   display: flex;
   margin:0;
@@ -167,14 +149,6 @@ p#web{
   }
   img{
   width: 50px;
-    
-}
-}
-@media (min-width: 1000px){
-  
-  img{
-  width: 80px;
-    
 }
 }
 

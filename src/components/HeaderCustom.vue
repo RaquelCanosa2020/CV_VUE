@@ -13,6 +13,7 @@
       
       <a id="lkn" href="https://es.linkedin.com/in/raquelcanosara">lkdn</a>
       <a id="git" href="https://github.com/RaquelCanosa2020">github</a>
+      
 
            
     </section>
@@ -24,8 +25,10 @@
     </div>
 </template>
 <script>
+
 export default {
   name: "HeaderCustom",
+  
 }
 </script>
 

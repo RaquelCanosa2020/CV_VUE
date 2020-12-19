@@ -21,60 +21,35 @@
         </section>
         <section id="two">
             <article v-if="explain === 1">
-                <p>
-                    Implementar una web simulada, pero plenamente funcional,
-                    que incluyera un <strong>sistema de reserva de espacio en playas</strong> previo registro del usuario. 
-                  </p>
-                  <p>Era fundamental un <strong>buscador avanzado</strong> de playas por diferentes criterios, incluida la fecha, así como el <strong>control del aforo</strong></p>
+                <p>{{aditional.objective.p1}}</p>
+                <p>{{aditional.objective.p2}} </p>
+                <p>{{aditional.objective.p3}} </p>
             </article>
             
             <article v-if="explain === 2">
-                <p>
-                    <strong>La gestión de las fechas.</strong> y el adecuado control de la disponibilidad mediante <strong>consultas a la base de datos</strong>, para obtener el dato correcto. 
-                    </p>
-                  
-                  <p>Muchas horas de trabajo individual pero también
-                    con mis compañeros de bootcamp (de forma remota, dada la situación COVID) y consultas al profesorado nos han permitido superar
-                    los obstáculos.
-                  </p>
+                <p>{{aditional.difficulties.p1}} </p>
+                <p>{{aditional.difficulties.p2}} </p>
+                <p>{{aditional.difficulties.p3}} </p>
             </article>
-            
-                  
+                              
             <article v-if="explain === 3">
-                <p>
-                    Dada la naturaleza del proyecto, me pareció apropiado poder dar <strong>información meteorológica</strong>
-                    para la fecha seleccionada por el usuario, para ello, la web se encuentra conectada a la API de Meteogalicia.
-                    </p>
-                  <p>
-                    Para los datos de las playas, también se ha utilizado una API real del Miteco, de una selección inicial de playas.
-                    </p>
-                  <p>
-                    Adicionalmente, he incluido un link personalizado a <strong>GoogleMaps </strong>de cada playa y sus coordenadas geográficas, obtenidas
-                    también de la API del Ministerio. He utilizado AXIOS en ambos casos.
-                  </p>
+                <p>{{aditional.challenges.p1}} </p>
+                <p>{{aditional.challenges.p2}} </p>
+                <p>{{aditional.challenges.p3}} </p>
             </article>
             
                    
             <article v-if="explain === 4">
-                <p>
-                    El proyecto cumplió con los requisitos exigidos por el profesorado de Hack a Boss, y las funcionalidades añadidas pienso
-                    que son un valor añadido. 
-                    </p>
-                  <p>El uso de <strong>VUE</strong> en el frontend creo que le ha conferido bastante reactividad a la web. 
-                    </p>
-                  <p>Además de lo ya expuesto, se implantó el sistema de <strong>registro y login de usuarios</strong>, y una parte específica para el <strong>Administrador.</strong>
-                  </p>
+                <p>{{aditional.goals.p1}} </p>
+                <p>{{aditional.goals.p2}} </p>
+                <p>{{aditional.goals.p3}} </p>
             </article>
             
                    
             <article v-if="explain === 5">
-                <p>
-                    Dado que es mi primer proyecto, realizado tras sólo cuatro meses de curso, sé que hay
-                    mucho que mejorar, optimizando más el código del frontend y, sobre todo, mejorando el diseño. 
-                    </p>
-                  <p>La web es responsive, pero me gustaría mejorar
-                    la accesibilidad y el aspecto general de la misma.
-                  </p>
+                <p>{{aditional.improvements.p1}} </p>
+                <p>{{aditional.improvements.p2}} </p>
+                <p>{{aditional.improvements.p3}} </p>
             </article>
             
         </section>
@@ -86,9 +61,12 @@
 <script>
 export default {
     name: "aditionalcustom",
+    props:{
+        aditional: Object,
+    },
     data(){
         return{
-            explain: false
+            explain: 1
         }
     }
     
@@ -102,6 +80,7 @@ section{
 }
 section#two{
     margin-top:0;
+    width: 100%;
 }
 
 button.item{
@@ -109,7 +88,7 @@ button.item{
     text-align: center;
     margin: 0rem;
     border: none;
-    border-bottom: 1px solid rgb(68, 68, 218);
+    border-bottom: 1px solid lightgray;
     color:rgb(68, 68, 218);
     font-weight: 600;
     font-size: 0.5rem;
@@ -121,15 +100,16 @@ button:hover{
 }
 
 button.marked{
-border: 1px solid rgb(68, 68, 218);
+border: 1px solid lightgray;
 border-bottom: none;
 
 }
 
 article{
-    border: 1px solid rgb(68, 68, 218);
+    border: 1px solid lightgray;
     border-top: 0;
     padding: 0.5rem;
+    width: 100%;
     
 }
 

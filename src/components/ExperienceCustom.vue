@@ -32,11 +32,11 @@ ul{
     list-style: none;
 }
 
-section{
+/* section{
 display: flex;
 justify-content: space-around;
 margin-bottom: 2rem;
-}
+} */
 
 p#first{
     text-decoration: underline;

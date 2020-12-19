@@ -18,6 +18,7 @@ export default {
     
     props:{
         techs: Array,
+        index: Number
     },
     
 }
@@ -29,17 +30,38 @@ ul{
     padding-left:0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 li{
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
     background-color:  rgb(68, 68, 218);
     color: white;
     border-radius: 1em;
-    min-width: 20%;
+    
     text-align: center;
     font-weight: 600;
+    
+    font-size: 0.6rem;
+        width: 50px;
+}
+
+@media (min-width: 700px){
+    li{
+        
+        font-size: 0.9rem;
+        width: 80px;
+    }
+}
+
+@media (min-width: 1000px){
+    li{
+        
+        width: 120px;
+    
+    font-size: 1.2rem;
+    }
+    
 }
 </style>
