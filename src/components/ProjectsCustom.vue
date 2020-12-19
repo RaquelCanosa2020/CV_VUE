@@ -11,9 +11,9 @@
 
             <button class="info" @click="getWord(index)" v-if="aditional !== index">Info></button>
             <button class="info" @click="getWord(index)" v-if="aditional === index">Ocultar></button>
-            <a class="linkproject" v-show="project.links.video !== '#'" :href="project.links.video">Vídeo ></a>
-            <a class="linkproject" v-show="project.links.code !== '#'" :href="project.links.code">Código ></a>
-            <a class="linkproject" v-show="project.links.web !== '#'" :href="project.links.web">Web ></a>
+            <a class="linkproject" target="_blank" v-show="project.links.video !== '#'" :href="project.links.video">Vídeo ></a>
+            <a class="linkproject" target="_blank" v-show="project.links.code !== '#'" :href="project.links.code">Código ></a>
+            <a class="linkproject" target="_blank" v-show="project.links.web !== '#'" :href="project.links.web">Web ></a>
           </article>
 
          

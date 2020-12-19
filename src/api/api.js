@@ -68,7 +68,7 @@ const projects =[
     },
     {
         id:2, date:"Nov.2020", title: "Vini Mundi", techs:["HTML", "CSS", "Javascript", "REACT"], 
-        links:{code:"https://github.com/RaquelCanosa2020/DVINOS_REACT",video:"#", web:"#"},
+        links:{code:"https://github.com/RaquelCanosa2020/DVINOS_REACT",video:"#", web:"https://vinimundiprueba.netlify.app"},
         aditional:{
             objective: {p1:"Desarrollar una web sencilla que simule un ecommerce de vinos (salvo plataforma de pagos)",p2: "El objetivo era poner en práctica los conocimientos adquiridos de REACT",p3:""},
             difficulties: {p1:"La aplicación de los principios básicos de REACT tras una formación de 20 horas", p2: "", p3:""},
