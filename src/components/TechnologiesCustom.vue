@@ -3,8 +3,7 @@
         <ul>
             <li v-for=" tech in techs" :key="tech.id">
                {{tech}}
-               
-                </li>
+            </li>
         </ul> 
 
     </div>
@@ -39,17 +38,14 @@ li{
     background-color:  rgb(68, 68, 218);
     color: white;
     border-radius: 1em;
-    
     text-align: center;
     font-weight: 600;
-    
     font-size: 0.6rem;
-        width: 50px;
+    width: 50px;
 }
 
 @media (min-width: 700px){
     li{
-        
         font-size: 0.9rem;
         width: 80px;
     }
@@ -57,10 +53,8 @@ li{
 
 @media (min-width: 1000px){
     li{
-        
         width: 120px;
-    
-    font-size: 1.2rem;
+        font-size: 1.2rem;
     }
     
 }

@@ -2,9 +2,7 @@
     <div class="projects">
         <div class="oneproject" v-for="(project, index) in projects" :key="project.id">
 
-          
-            
-            <article id="link">
+          <article id="link">
             <p id="web">★ {{project.date}} <strong>{{project.title}}</strong></p>   
 
             <technologiescustom :techs="project.techs" />
@@ -16,9 +14,6 @@
             <a class="linkproject" target="_blank" v-show="project.links.web !== '#'" :href="project.links.web">Web ></a>
           </article>
 
-         
-          
-         
           <article v-if="aditional === index">
             <aditionalcustom :aditional="project.aditional"/>
           </article>
@@ -50,7 +45,6 @@ export default {
   
   methods:{
     getWord(index){
-      console.log(index);
       this.aditional === index ? this.aditional= null : this.aditional = index
       }
   }  
@@ -63,7 +57,6 @@ div.oneproject{
   padding: 0.5rem;  
   margin-bottom: 1rem;
   border: 1px solid lightgray;
-  border-radius: 2em;
 }
 
 button.info, a.linkproject{
@@ -82,25 +75,16 @@ button.info{
 
 @media (min-width: 700px){
 
-  
-
-    button.info, a.linkproject
-{
-   font-size: 1rem;
+  button.info, a.linkproject{
+  font-size: 1rem;
 }
-
 }
 
 @media (min-width: 1000px){
 
-  
-
-    button#info, a.linkproject
-{
-    
+    button#info, a.linkproject{
     font-size: 1rem;
-    
-    }
+  }
     
 }
 

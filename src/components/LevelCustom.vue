@@ -6,7 +6,7 @@
             </li>
         </ul>
 
-        </div>
+    </div>
 </template>
 
 <script>
@@ -62,29 +62,27 @@ ul.levels > li{
 	height: 15px;
 	margin-left: 0.2rem;
 }
+
 ul.levels > li.A{
 	background-color:rgb(68, 68, 218);
 }
+
 ul.levels > li.B{
 	background-color: gray;
 }
 
 @media (min-width: 700px){
 
-    ul.levels > li
-{
+    ul.levels > li{
     width: 25px;
 	height: 25px;
 	margin-left: 0.2rem;
     }
-    
 }
 
 @media (min-width: 1000px){
 
-    ul.levels > li
-{
-    
+    ul.levels > li{
     width: 30px;
 	height: 30px;
 	margin-left: 0.4rem;

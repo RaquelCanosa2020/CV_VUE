@@ -58,34 +58,34 @@ const projects =[
     {
         id:1, date:"Dic.2020", title: "Juniors", techs:[ "HTML", "CSS", "Javascript", "REACT", "NEXT"], 
         links:{code:"#",video:"#",web:"#"},
-        aditional:{
-            objective: {p1:"Desarrollar una plataforma sencilla para mostrar información de alumnos de Hack a Boss, que facilite la búsqueda a las empresas.",p2: "Proyecto colaborativo desarrollado por varios exalumnos de Hack a Boss",p3:""},
-            difficulties: {p1: "Uso del framework de React Next, que inicialmente desconocíamos.", p2: "La decisión sobre la mejor forma de presentar la información." , p3:"Se fueron superando todas las dificultades gracias al constante trabajo en equipo, y a la ayuda inicial de Hack a Boss, sobre el uso de Next y sobre las preferencias de las empresas."},
-            challenges: {p1:"Realizar un diseño suficientemente atractivo y que siguiera las directrices de estilo de la empresa, y las mejores prácticas posibles de usabilidad", p2:"", p3:""},
-            goals: {p1:"Se elaboró una plataforma sencilla e intuitiva, el proyecto está próxima a su finalización en espera de la aprobación por parte de la empresa ", p2: "", p3:""},
-            improvements: {p1: "A futuro se plantea la implantación de un buscador avanzado que permita seleccionar juniors según varios criterios.", p2: "", p3:""}}
+        aditional:[
+            {title: "Objetivos", p1:"Desarrollar una plataforma sencilla para mostrar información de alumnos de Hack a Boss, que facilite la búsqueda a las empresas.",p2: "Proyecto colaborativo desarrollado por varios exalumnos de Hack a Boss",p3:""},
+             {title: "Dificultades", p1: "Uso del framework de React Next, que inicialmente desconocía.", p2: "Se fueron superando todas las dificultades gracias al constante trabajo en equipo, y a la ayuda inicial de Hack a Boss, sobre el uso de Next y sobre las preferencias de las empresas." , p3:""},
+            {title: "Retos", p1:"Realizar un diseño suficientemente atractivo y que siguiera las directrices de estilo de la empresa, y las mejores prácticas posibles de usabilidad", p2:"", p3:""},
+            {title: "Conseguido", p1:"Se elaboró una plataforma sencilla e intuitiva, el proyecto está próxima a su finalización en espera de la aprobación por parte de la empresa ", p2: "", p3:""},
+            {title: "Mejoras", p1: "A futuro se plantea la implantación de un buscador avanzado que permita seleccionar juniors según varios criterios.", p2: "", p3:""}
     
-    },
+    ]},
     {
-        id:2, date:"Nov.2020", title: "Vini Mundi", techs:["HTML", "CSS", "Javascript", "REACT"], 
-        links:{code:"https://github.com/RaquelCanosa2020/DVINOS_REACT",video:"#", web:"https://vinimundiprueba.netlify.app"},
-        aditional:{
-            objective: {p1:"Desarrollar una web sencilla que simule un ecommerce de vinos (salvo plataforma de pagos)",p2: "El objetivo era poner en práctica los conocimientos adquiridos de REACT",p3:""},
-            difficulties: {p1:"La aplicación de los principios básicos de REACT tras una formación de 20 horas", p2: "", p3:""},
-            challenges: {p1:"Además del listado de productos, desarrollar un buscador y un carrito de compras", p2:"Conseguir la adecuada reactividad de la página", p3:""},
-            goals: {p1:"Conseguí implantar lo previsto, mediante el uso de Contexto y de los distintos hooks de REACT", p2: "", p3:""},
-            improvements: {p1: "Es un proyecto a largo plazo que utilizaré para seguir mejorando en este framework", p2: "Mi intención es desarrollar la parte de administrador", p3:"También tengo intención de desarrollar el sistema de usuarios, implantando el necesario backend para ello."}}
-    },
+        id:2, date:"Nov.2020", title: "Dvinos", techs:["HTML", "CSS", "Javascript", "REACT"], 
+        links:{code:"https://github.com/RaquelCanosa2020/DVINOS_REACT",video:"#", web:"https://dvinosprueba.netlify.app"},
+        aditional:[
+            {title: "Objetivos", p1:"Desarrollar una web sencilla que simule un ecommerce de vinos (salvo plataforma de pagos)",p2: "El objetivo era poner en práctica los conocimientos adquiridos de REACT",p3:""},
+            {title: "Dificultades", p1:"La aplicación de los principios básicos de REACT tras una formación de 20 horas", p2: "", p3:""},
+            {title: "Retos", p1:"Además del listado de productos, desarrollar un buscador y un carrito de compras", p2:"Conseguir la adecuada reactividad de la página", p3:""},
+            {title: "Conseguido", p1:"Conseguí implantar lo previsto, mediante el uso de Contexto y de los distintos hooks de REACT", p2: "", p3:""},
+            {title: "Mejoras", p1: "Es un proyecto a largo plazo que utilizaré para seguir mejorando en este framework", p2: "Mi intención es desarrollar la parte de administrador", p3:"También tengo intención de desarrollar el sistema de usuarios, implantando el necesario backend para ello."}
+        ]},
     {
         id:3, date:"Jul.- Sept.2020", title: "Galiplaya", techs:[ "HTML", "CSS", "Javascript", "MySQL", "VUE", "NODE", "EXPRESS", "AXIOS"], 
         links:{code:"https://github.com/RaquelCanosa2020/proyecto",video:"https://drive.google.com/file/d/1ZZ93tp3L17ZKbo2MKg9vfdF6vWzp6ym3/view?usp=sharing",web:"#"},
-        aditional:{
-        objective: {p1:"Implementar una web simulada, pero plenamente funcional, que incluyera un sistema de reserva de espacio en playas previo registro del usuario.",p2: "Era fundamental un buscador avanzado de playas por diferentes criterios, incluida la fecha, así como el control del aforo",p3:""},
-        difficulties: {p1:"La gestión de las fechas y el adecuado control de la disponibilidad mediante consultas a la base de datos para obtener el dato correcto.", p2: "Muchas horas de trabajo individual pero también con mis compañeros de bootcamp (de forma remota, dada la situación COVID) y consultas al profesorado nos han permitido superar los obstáculos", p3:""},
-        challenges: {p1:"Dada la naturaleza del proyecto, me pareció apropiado poder dar información meteorológica para la fecha seleccionada por el usuario, para ello, la web se encuentra conectada a la API de Meteogalicia", p2:"Para los datos de las playas, también se ha utilizado una API real del Miteco, de una selección inicial de playas", p3:"Adicionalmente, he incluido un link personalizado a GoogleMaps de cada playa y sus coordenadas geográficas, obtenidas también de la API del Ministerio. He utilizado AXIOS en ambos casos"},
-        goals: {p1:"El proyecto cumplió con los requisitos exigidos por el profesorado de Hack a Boss, y las funcionalidades añadidas pienso que son un valor añadido. El uso de VUE que le ha conferido bastante reactividad a la web", p2: "Además de lo ya expuesto, se implantó el sistema de registro y login de usuarios, y una parte específica para el Administrador.", p3:""},
-        improvements: {p1: "Dado que es mi primer proyecto, realizado tras sólo cuatro meses de curso, sé que hay mucho que mejorar, optimizando más el código del frontend y, sobre todo, mejorando el diseño", p2: "La web es responsive, pero me gustaría mejorar la accesibilidad y el aspecto general de la misma.", p3:""}}
-    }
+        aditional:[
+        {title: "Objetivos", p1:"Implementar una web simulada, pero plenamente funcional, que incluyera un sistema de reserva de espacio en playas previo registro del usuario.",p2: "Era fundamental un buscador avanzado de playas por diferentes criterios, incluida la fecha, así como el control del aforo",p3:""},
+        {title: "Dificultades",p1:"La gestión de las fechas y el adecuado control de la disponibilidad mediante consultas a la base de datos para obtener el dato correcto.", p2: "Muchas horas de trabajo individual pero también con mis compañeros de bootcamp (de forma remota, dada la situación COVID) y consultas al profesorado nos han permitido superar los obstáculos", p3:""},
+        {title: "Retos", p1:"Dada la naturaleza del proyecto, me pareció apropiado poder dar información meteorológica para la fecha seleccionada por el usuario, para ello, la web se encuentra conectada a la API de Meteogalicia", p2:"Para los datos de las playas, también se ha utilizado una API real del Miteco, de una selección inicial de playas", p3:"Adicionalmente, he incluido un link personalizado a GoogleMaps de cada playa y sus coordenadas geográficas, obtenidas también de la API del Ministerio. He utilizado AXIOS en ambos casos"},
+        {title: "Conseguido",p1:"El proyecto cumplió con los requisitos exigidos por el profesorado de Hack a Boss, y las funcionalidades añadidas pienso que son un valor añadido. El uso de VUE que le ha conferido bastante reactividad a la web", p2: "Además de lo ya expuesto, se implantó el sistema de registro y login de usuarios, y una parte específica para el Administrador.", p3:""},
+        {title: "Mejoras", p1: "Dado que es mi primer proyecto, realizado tras sólo cuatro meses de curso, sé que hay mucho que mejorar, optimizando más el código del frontend y, sobre todo, mejorando el diseño", p2: "La web es responsive, pero me gustaría mejorar la accesibilidad y el aspecto general de la misma.", p3:""}
+    ]}
 ];
 
 const functionalities =[

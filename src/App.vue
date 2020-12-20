@@ -28,13 +28,12 @@ font-family: Helvetica, sans-serif;
 }
 #app {
     
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: rgb(8, 8, 92);
-    min-height: 100vh;
-    
-    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: rgb(8, 8, 92);
+  min-height: 100vh;
+   
   }
   
   #nav {
@@ -80,6 +79,7 @@ font-family: Helvetica, sans-serif;
     margin:0 0 1rem 0;
     padding:0;
   }
+
   section#contact a{
     font-size:0rem;
     width: 20px;
@@ -87,122 +87,138 @@ font-family: Helvetica, sans-serif;
      background-size: 20px 20px;
      margin: 5px;
   }
+
   a#mail{
     background-image: url(assets/a.png);
-   }
+  }
+
    a#lkn{
     background-image: url(assets/linkedin.png);
-   }
+  }
+
    a#git{
     background-image: url(assets/github.png);
-   }
+  }
    
    h3{
     font-size: 1rem;
+  }
+
+  p, li, a, button{
+    font-size: 0.8rem;
+    line-height: 1.5em;
+  }
+
+  img#me{
+    max-width: 80px;
+    object-fit: contain;
+  }
+  
+  @media(min-width: 700px){
+     header{
+      justify-content: center;
+    }
+
+     article#header{
+      display: flex;
+    }
+
+     h1{
+      font-size: 1.7rem;
+    }
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    h3{
+      font-size: 1.3rem;
     }
 
     p, li, a, button{
-    font-size: 0.8rem;
-    line-height: 1.5em;
+      font-size: 1.1rem;
+    }
+  
+   img#me{
+    width: 150px;
+    margin-right: 2rem;
     }
 
-    img#me{
-    max-width: 80px;
-    object-fit: contain;
-    }
-  
-   @media(min-width: 700px){
-     header{
-    
-    justify-content: center;
-  }
-     article#header{
-       display: flex;
-     }
-     h1{
-    font-size: 1.7rem;
-    
-  }
-  h2{
-    font-size: 1.5rem;
-  }
-  h3{
-    font-size: 1.3rem;
-  }
-  p, li, a, button{
-    font-size: 1.1rem;
-  }
-  
-  img#me{
-   width: 150px;
-   margin-right: 2rem;
-     }
-     section#contact{
-    
+  section#contact{
     margin:24px;
     padding:16px 0;
-  }
+    }
   }
   
   @media(min-width:1000px){
      header{
       justify-content: space-evenly;
-  }
-  article#header{
+    }
+
+    article#header{
        width: 70%;
        justify-content: space-around;
-         }
-  img#me{
-   max-width: 150px;
-   margin: 1rem 0;
-     }
-      h1{
-    font-size: 2.5rem;
-    
-  }
-  h2{
-    font-size: 2rem;
-  }
-  h3{
-    font-size: 1.5rem;
-  }
-  p, li, a, button{
-    font-size: 1.3rem;
-  }
-  section#contact a{
-    font-size:0rem;
-    width: 30px;
-    height: 30px;
-     background-size: 30px 30px;
-     margin: 7px;
-  }
+    }
+
+    img#me{
+      max-width: 150px;
+      margin: 1rem 0;
+    }
+
+    h1{
+      font-size: 2.5rem;
+    }
+
+    h2{
+      font-size: 2rem;
+    }
+
+    h3{
+      font-size: 1.5rem;
+    }
+
+    p, li, a, button{
+      font-size: 1.3rem;
+    }
+
+    section#contact a{
+      font-size:0rem;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      margin: 7px;
+    }
   
   }
   @media(min-width:1300px){
     img#me{
-   max-width: 200px;
-   margin: 1rem 0;
-     }
+      max-width: 200px;
+      margin: 1rem 0;
+    }
+
      section#contact a{
+      width: 50px;
+      height: 50px;
+      background-size: 50px 50px;
+      margin: 7px;
+    }
+
+    h1{
+      font-size: 3rem;
+      
+    }
+
+    h2{
+      font-size: 2.5rem;
+    }
+
+    h3{
+      font-size: 2.2rem;
+    }
     
-    width: 50px;
-    height: 50px;
-     background-size: 50px 50px;
-     margin: 7px;
-  }
-  h1{
-    font-size: 3rem;
-    
-  }
-  h2{
-    font-size: 2.5rem;
-  }
-  h3{
-    font-size: 2.2rem;
-  }
-  p, li, a{
-    font-size: 1.9rem;
-  }
+    p, li, a{
+      font-size: 1.9rem;
+    }
   
   }
 </style>

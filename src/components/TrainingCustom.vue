@@ -8,12 +8,14 @@
                <section>
                    
                     <p> <strong>{{course.title}}</strong> {{course.data}}</p>
-                               <p v-if="course.techs">
-                    <technologiescustom :techs="course.techs"/>
-                </p>
+
+                    <p v-if="course.techs">
+                        <technologiescustom :techs="course.techs"/>
+                    </p>
+
                </section>
                
-                </li>
+            </li>
         </ul> 
     </div>
 </template>

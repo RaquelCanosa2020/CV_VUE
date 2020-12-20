@@ -113,7 +113,6 @@ export default {
 <style scoped>
 img{
   width: 30px;
-    
 }
 
 h3{
@@ -122,33 +121,37 @@ h3{
 
 
 section{
-    margin: 2rem 2rem 1rem 2rem;
-    text-align: left;
+  margin: 2rem 2rem 1rem 2rem;
+  text-align: left;
 }
 
 @media (min-width: 700px){
   div.home{
     padding: 1rem;
   }
+
   img{
-  width: 40px;
-}
+    width: 40px;
+  }
 }
 
 @media (min-width: 1025px){
   div.group{
-  display: flex;
-  margin:0;
+    display: flex;
+    margin:0;
   }
+
   section{
     width: 50%;
     margin-top: 1rem;
   }
+
   section#experience{
     width: 100%;
   }
+
   img{
-  width: 50px;
+    width: 50px;
 }
 }
 

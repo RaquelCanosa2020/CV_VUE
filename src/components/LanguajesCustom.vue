@@ -2,15 +2,16 @@
     <div>
         <ul>
             <li v-for=" lang in langs" :key="lang.id">
-               <article>
-               <p> {{lang.languaje}}</p>
-                <p> {{lang.level}}</p>
-                </article>
-                <levelcustom :level="lang.level"/>
-               
-                </li>
-        </ul> 
 
+               <article>
+                    <p> {{lang.languaje}}</p>
+                    <p> {{lang.level}}</p>
+                </article>
+
+                <levelcustom :level="lang.level"/>
+
+            </li>
+        </ul> 
     </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
     
 }
 </script>
+
 <style scoped>
 ul{
     list-style: none;
@@ -46,25 +48,21 @@ article{
     color: white;
     border-radius: 1em;
     width: 60px;
-    
-  }
+}
 
 p{
     font-weight: 600;
     margin:0;
     font-size: 0.7rem;
-    
-    
 }
 
 @media (min-width: 700px){
 
     article{
-         
-         width: 90px;
+        width: 90px;
     }
-    p{
-        
+
+    p{       
         font-size: 1rem;
     }
 }
@@ -72,11 +70,10 @@ p{
 @media (min-width: 1000px){
 
     article{
-         
-         width: 150px;
+        width: 150px;
     }
+
     p{
-        
         font-size: 1.5rem;
     }
     
