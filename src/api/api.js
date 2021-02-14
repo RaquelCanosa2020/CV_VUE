@@ -39,7 +39,9 @@ const languajes = [
 ];
 
 const experience = [
-    
+    {
+        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester."
+    },
     {
         period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad, Medioambiente, Prevención y Protección de Datos Personales, entre otros."
     },
@@ -48,9 +50,6 @@ const experience = [
     },
     {
         period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad."
-    },
-    {
-        period: "Ene.1999 - Ene.2000", name: "Repsol, S.A.", description: "Becaria en Dpto. Servicios Técnicos."
     }
 ];
 
