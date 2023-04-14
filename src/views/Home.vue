@@ -11,7 +11,7 @@
          <span> Objetivo profesional </span>
         </h3>
         <p>
-          Desarrollarme como programadora, formando parte de un equipo al que pueda aportar las habilidades adquiridas por mi experiencia profesional
+          Desarrollarme como programadora y/o tester, formando parte de un equipo al que pueda aportar las habilidades adquiridas por mi experiencia profesional
           anterior.
         </p>
       
@@ -30,7 +30,7 @@
 
       <section>
       <h3>
-          <img src="../assets/codificacion.png" alt="pantalla con código"/> <span>Formación programación</span>
+          <img src="../assets/codificacion.png" alt="pantalla con código"/> <span>Formación programación / testing</span>
         </h3>
         <trainingcustom :courses="programming"/>
       </section>
@@ -55,7 +55,7 @@
 
       <section>
         <h3>
-          <img src="../assets/startup.png" alt="pantalla con cohete"/> <span>Proyectos Programación</span>
+          <img src="../assets/startup.png" alt="pantalla con cohete"/> <span>Prácticas Programación</span>
         </h3>
 
         <projectscustom :projects="projects"/>

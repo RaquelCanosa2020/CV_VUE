@@ -10,7 +10,7 @@
          <h1>
             Raquel Canosa Raña
           </h1>
-          <h2>Programadora Full Stack</h2>
+          <h2>Programadora Full Stack / Tester</h2>
         </section>
 
         <section id="contact">
@@ -33,4 +33,17 @@ export default {
 }
 
 </script>
+
+<style scoped>
+
+section#name h1{
+
+display: flex;
+
+justify-content: center;
+
+}
+
+
+</style>
 

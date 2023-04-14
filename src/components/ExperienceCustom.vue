@@ -4,20 +4,26 @@
             <div id="experience" v-for=" experience in experiences" :key="experience.id">
                 <p id="first"> {{experience.period}} <strong>{{experience.name}}</strong></p>
                 <p> {{experience.description}}</p>
+                <technologiescustom :techs="experience.techs" />
             </div>
+
+            
         
     </div>
 </template>
 
 <script>
-
+import technologiescustom from "@/components/TechnologiesCustom";
 
 export default {
-    name: "trainingcustom",
+    name: "experiencecustom",
     
     props:{
         experiences: Array,
     },
+    components:{
+    technologiescustom
+  },
     
 }
 </script>
