@@ -9,11 +9,18 @@
                    
                     <p> <strong>{{course.title}}</strong> {{course.data}}</p>
 
+                    <div class="courseData">
+
                     <p v-if="course.techs">
                         <technologiescustom :techs="course.techs"/>
                     </p>
-
+                    <p v-if="course.image">
+                       <a :href="course.link"> <img id="courseImage" :src="course.image"/></a>
+                       </p>
+                    
+                    </div>
                </section>
+               
                
             </li>
         </ul> 
@@ -48,5 +55,23 @@ li{
 
 p#left{
     margin-right: 0.5rem;
+}
+
+div.courseData{
+    display: flex;
+}
+
+div.courseData p{
+    margin-left: 20px;
+}
+
+mg#courseImage{
+        width: 60px;
+    }
+
+@media (min-width: 1025px){
+    img#courseImage{
+        width: 90px;
+    }
 }
 </style>

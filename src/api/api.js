@@ -4,14 +4,18 @@ const aptitudes = ["Persistencia en la resolución de problemas",
     "Orientación al cliente y a la mejora"];
 
 const programming = [
+
+    {
+        year: "2023", title: "Certified Tester Foundation Level (CTFL).", data: "ISTQB.",techs:["Pruebas de Software"], image:require("../assets/istqb90px.png"), link:"https://www.credly.com/badges/05da2f16-55f7-4375-bb7d-ac4adbda0bd8/public_url"
+    },
     
     {
         year: "2022", title: "Cypres: Automatización de pruebas de punta a punta.", data: "Udemy.",techs:["Cypress"]
-    },
+    }/*,
     
     {
         year: "2020", title: "REACT.", data: "Hack a Boss.", techs:["REACT"]
-    },
+    }*/,
     {
         year: "2020", title: "Bootcamp de Programación Full Stack Javascript.", data: "Hack a Boss (400 horas).", techs:[
             "HTML", "CSS", "Javascript", "MySQL", "VUE", "NODE"]
@@ -42,16 +46,16 @@ const languajes = [
 
 const experience = [
     {
-        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester.", techs:["Test manual", "SQL Server", "M.Azure"]
+        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester.",techs:["Test manual", "SQL Server", "M.Azure"]
     },
     {
-        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad, Medioambiente, PRL y RGPD, entre otros.", techs:[]
+        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad, Medioambiente, PRL y RGPD, entre otros.",techs:[]
     },
     {
-        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest.", description: "Consultoría Calidad, Mediambiente, Prevención, CdC, I+D+i.", techs:[]
+        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest.", description: "Consultoría Calidad, Mediambiente, Prevención, CdC, I+D+i.",techs:[]
     },
     {
-        period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad.", techs:[]
+        period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad.",techs:[]
     }
 ];
 

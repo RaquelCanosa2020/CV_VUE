@@ -4,6 +4,7 @@
             <div id="experience" v-for=" experience in experiences" :key="experience.id">
                 <p id="first"> {{experience.period}} <strong>{{experience.name}}</strong></p>
                 <p> {{experience.description}}</p>
+                
                 <technologiescustom :techs="experience.techs" />
             </div>
 
@@ -44,6 +45,10 @@ margin-bottom: 2rem;
 
 p#first{
     text-decoration: underline;
+}
+
+img{
+
 }
 
 </style>

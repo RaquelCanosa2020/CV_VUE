@@ -32,7 +32,7 @@
       <h3>
           <img src="../assets/codificacion.png" alt="pantalla con código"/> <span>Formación programación / testing</span>
         </h3>
-        <trainingcustom :courses="programming"/>
+        <trainingcustom :courses="programming" />
       </section>
 
       <section>
@@ -66,6 +66,8 @@
     
        <h3>
           <img src="../assets/maleta.png" alt="maletin"/> <span>Experiencia profesional</span>
+
+
         </h3>
         <experiencecustom :experiences="experiences"/>
        
