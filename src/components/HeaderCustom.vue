@@ -2,7 +2,7 @@
   <div>
     <header>
 
-      <img id="me" src="../assets/me.png" alt="Avatar"/>
+      <img id="me" src="../assets/cerca.png" alt="Avatar"/>
 
       <article id="header">
 
@@ -10,7 +10,7 @@
          <h1>
             Raquel Canosa Raña
           </h1>
-          <h2>Programadora Full Stack / Tester</h2>
+          
         </section>
 
         <section id="contact">
@@ -42,7 +42,14 @@ display: flex;
 
 justify-content: center;
 
+
 }
+
+
+
+
+
+
 
 
 </style>

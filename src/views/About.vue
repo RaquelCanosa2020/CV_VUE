@@ -6,7 +6,7 @@
     <ul id="advise">
         
       <li>
-        La web se encuentra alojada en la empresa Netlifly, con representación a efectos de la regulación de la Protección de Datos, en VeraSafe (Irlanda). Puedes ver su Política de Privacidad aquí: <a href="https://www.netlify.com/gdpr-ccpa"> https://www.netlify.com/gdpr-ccpa.</a>
+        La web se encuentra alojada en la empresa Netlifly. Puedes ver su Política de Privacidad aquí: <a href="https://www.netlify.com/privacy/">https://www.netlify.com/privacy/</a>,"<a href="https://www.netlify.com/gdpr-ccpa"> https://www.netlify.com/gdpr-ccpa.</a>
       </li>
     
       <li> Iconos diseñados por <a href="https://www.flaticon.es/autores/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>

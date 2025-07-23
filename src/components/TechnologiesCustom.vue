@@ -33,7 +33,7 @@ ul{
 }
 
 li{
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin: 0.3rem;
     background-color:  rgb(68, 68, 218);
     color: white;
@@ -41,13 +41,14 @@ li{
     text-align: center;
     font-weight: 600;
     font-size: 0.6rem;
-    width: 50px;
+    width: auto;
+    min-width:60px;
 }
 
 @media (min-width: 700px){
     li{
         font-size: 0.9rem;
-        width: 80px;
+        
     }
 }
 

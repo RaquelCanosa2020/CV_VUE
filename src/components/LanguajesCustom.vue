@@ -42,7 +42,7 @@ li{
 article{
     display: flex;
     justify-content: center;
-    padding: 0.2rem 0.5rem;
+    padding: 0rem 0.2rem;
     margin: 0.5rem;
     background-color:  rgb(68, 68, 218);
     color: white;
@@ -52,7 +52,7 @@ article{
 
 p{
     font-weight: 600;
-    margin:0;
+    margin-right: 5px;
     font-size: 0.7rem;
 }
 

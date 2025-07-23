@@ -1,4 +1,4 @@
-const aptitudes = ["Persistencia en la resolución de problemas",
+const aptitudes = ["Trabajo en equipo",
     "Capacidad de aprendizaje",
     "Flexibilidad y capacidad de adaptación",
     "Orientación al cliente y a la mejora"];
@@ -6,23 +6,18 @@ const aptitudes = ["Persistencia en la resolución de problemas",
 const programming = [
 
     {
+        year: "En curso (28%)", title: "Ciclo Superior Desarrollo Web.", data: "IES Fernando Wirtz.",techs:["JAVA", "HTML","CSS","XML"], 
+    },
+
+    {
         year: "2023", title: "Certified Tester Foundation Level (CTFL).", data: "ISTQB.",techs:["Pruebas de Software"], image:require("../assets/istqb90px.png"), link:"https://www.credly.com/badges/05da2f16-55f7-4375-bb7d-ac4adbda0bd8/public_url"
     },
     
-    {
-        year: "2022", title: "Cypres: Automatización de pruebas de punta a punta.", data: "Udemy.",techs:["Cypress"]
-    }/*,
-    
-    {
-        year: "2020", title: "REACT.", data: "Hack a Boss.", techs:["REACT"]
-    }*/,
+  
     {
         year: "2020", title: "Bootcamp de Programación Full Stack Javascript.", data: "Hack a Boss (400 horas).", techs:[
             "HTML", "CSS", "Javascript", "MySQL", "VUE", "NODE"]
-    }
-];
-
-const anotherStudies= [
+    },
     {
         year: "2016", title: "Técnico Superior Prevención Riesgos Laborales.", data: "Univ. Camilo José Cela."
     },    
@@ -32,6 +27,21 @@ const anotherStudies= [
     {
         year: "1997", title: "Licenciada en CC. Químicas.", data: "Universidade da Coruña."
     }
+];
+
+const anotherStudies= [
+    {
+        year: "2025", title: "Karate DSL: API Automation and Performance from Zero to Hero", data: "Udemy."
+    },
+
+    {
+        year: "2022", title: "Cypres: Automatización de pruebas de punta a punta.", data: "Udemy."
+    },
+    
+    {
+        year: "2020", title: "REACT.", data: "Hack a Boss."
+    }
+    
 ];
 
 const languajes = [
@@ -46,13 +56,13 @@ const languajes = [
 
 const experience = [
     {
-        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester.",techs:["Test manual", "SQL Server", "M.Azure"]
+        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester.",techs:["Test manual", "SQL Server", "M.Azure", "Postman", "Métodología Agile", "Karate Framework"]
     },
     {
-        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad, Medioambiente, PRL y RGPD, entre otros.",techs:[]
+        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad y Medioambiente, entre otros.",techs:[]
     },
     {
-        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest.", description: "Consultoría Calidad, Mediambiente, Prevención, CdC, I+D+i.",techs:[]
+        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest.", description: "Consultoría Calidad y Mediambiente, entre otros",techs:[]
     },
     {
         period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad.",techs:[]
@@ -65,10 +75,9 @@ const projects =[
         links:{code:"#",video:"#",web:"#"},
         aditional:[
             {title: "Objetivos", p1:"Práctica de plataforma sencilla para mostrar información de alumnos de Hack a Boss.",p2: "Proyecto colaborativo desarrollado por varios exalumnos de Hack a Boss",p3:""},
-             {title: "Dificultades", p1: "Trabajo en colaboración en remoto.", p2: "" , p3:""},
-            {title: "Retos", p1:"Realizar un diseño suficientemente atractivo y que siguiera las directrices de estilo de la empresa, y las mejores prácticas posibles de usabilidad", p2:"", p3:""},
-            {title: "Conseguido", p1:"Se elaboró una plataforma sencilla e intuitiva", p2: "", p3:""},
-            {title: "Mejoras", p1: "A futuro sería deseable la implantación de un buscador avanzado que permita seleccionar juniors según varios criterios.", p2: "", p3:""}
+            
+            {title: "Dificultades", p1:"Coordinación del trabajo entre varias personas totalmente en remoto", p2:"", p3:""},
+            
     
     ]},
     {
@@ -79,7 +88,7 @@ const projects =[
             {title: "Dificultades", p1:"La aplicación de los principios básicos de REACT tras una formación de 20 horas", p2: "", p3:""},
             {title: "Retos", p1:"Además del listado de productos, desarrollar un buscador y un carrito de compras", p2:"Conseguir la adecuada reactividad de la página", p3:""},
             {title: "Conseguido", p1:"Conseguí implantar lo previsto, mediante el uso de Contexto y de los distintos hooks de REACT", p2: "", p3:""},
-            {title: "Mejoras", p1: "", p2: "Desarrollar la parte de administrador", p3:"Desarrollar el sistema de usuarios, implantando el necesario backend para ello."}
+            {title: "A mejorar", p1: "", p2: "Desarrollar la parte de administrador", p3:"Desarrollar el sistema de usuarios, implantando el necesario backend para ello."}
         ]},
     {
         id:3, date:"Jul.- Sept.2020", title: "Galiplaya", techs:[ "HTML", "CSS", "Javascript", "MySQL", "VUE", "NODE", "EXPRESS", "AXIOS"], 
@@ -87,9 +96,9 @@ const projects =[
         aditional:[
         {title: "Objetivos", p1:"Implementar una web simulada, pero plenamente funcional, que incluyera un sistema de reserva de espacio en playas previo registro del usuario.",p2: "Era fundamental un buscador avanzado de playas por diferentes criterios, incluida la fecha, así como el control del aforo",p3:""},
         {title: "Dificultades",p1:"La gestión de las fechas y el adecuado control de la disponibilidad mediante consultas a la base de datos para obtener el dato correcto.", p2: "El proyecto fue individual, aunque contando con la ayuda del profesorado cuando fue necesario, y la colaboración entre compañeros del bootcamp a la hora de resolver obtáculos comunes en este tipo de proyectos", p3:""},
-        {title: "Retos", p1:"Dada la naturaleza del proyecto, me pareció apropiado poder dar información meteorológica para la fecha seleccionada por el usuario, para ello, la web se encuentra conectada a la API de Meteogalicia", p2:"Para los datos de las playas, también se ha utilizado una API real del Miteco, de una selección inicial de playas", p3:"Adicionalmente, he incluido un link personalizado a GoogleMaps de cada playa y sus coordenadas geográficas, obtenidas también de la API del Ministerio. He utilizado AXIOS en ambos casos"},
-        {title: "Conseguido",p1:"El proyecto cumplió con los requisitos exigidos por el profesorado de Hack a Boss, y las funcionalidades añadidas pienso que son un valor añadido. El uso de VUE que le ha conferido bastante reactividad a la web", p2: "Además de lo ya expuesto, se implantó el sistema de registro y login de usuarios, y una parte específica para el Administrador.", p3:""},
-        {title: "Mejoras", p1: "Mejorar el código del frontend y, sobre todo, el diseño (no es mi fuerte)", p2: "Mejorar criterios de accesibilidad", p3:""}
+        {title: "Retos", p1:"Dada la naturaleza del proyecto, me pareció apropiado poder dar información meteorológica para la fecha seleccionada por el usuario, para ello, la web se encontraba conectada a la API de Meteogalicia", p2:"Para los datos de las playas, también se utilicé una API real del Miteco, de una selección inicial de playas", p3:"Adicionalmente, incluí un link personalizado a GoogleMaps de cada playa y sus coordenadas geográficas, obtenidas también de la API del Ministerio. Usé AXIOS en ambos casos"},
+        {title: "Conseguido",p1:"El proyecto cumplió con los requisitos exigidos por el profesorado de Hack a Boss. El uso de VUE que le confirió bastante reactividad a la web", p2: "Además de lo ya expuesto, se implantó el sistema de registro y login de usuarios, y una parte específica para el Administrador.", p3:""},
+        {title: "A mejorar", p1: "Mejorar el código del frontend y, sobre todo, el diseño", p2: "Mejorar criterios de accesibilidad", p3:""}
     ]}
 ];
 

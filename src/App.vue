@@ -12,6 +12,8 @@
 <script>
 import headercustom from "@/components/HeaderCustom.vue";
 import footercustom from "@/components/FooterCustom.vue";
+import '@/assets/fonts.css';
+
 export default {
   name: "App",
   
@@ -23,8 +25,10 @@ export default {
 </script>
 
 <style>
+
+
 html{
-font-family: Helvetica, sans-serif;
+font-family: 'Quicksand';
 }
 #app {
     
@@ -50,18 +54,20 @@ font-family: Helvetica, sans-serif;
   }
     
   header{
-    background-color: rgb(68, 68, 218);
+    background-color: white;
     display:flex;
     justify-content: space-around;
-  }
-
-  h1, h2{
-  color: white;
+    align-items: center;
+    border-bottom: 1px solid rgb(68, 68, 218);
   }
 
   h1{
-    font-size: 1rem;
-    padding-top: 1rem;
+  color: rgb(68, 68, 218);
+  }
+
+  h1{
+    font-size: 1.5rem;
+    
   }
 
   h2{
@@ -107,16 +113,20 @@ font-family: Helvetica, sans-serif;
   p, li, a, button{
     font-size: 0.8rem;
     line-height: 1.5em;
+    text-decoration: none;
   }
 
   img#me{
-    max-width: 80px;
-    object-fit: contain;
+    max-width: 100px;
+    max-height: fit-content;
+    border-radius: 100%;
+   
   }
   
   @media(min-width: 700px){
      header{
-      justify-content: center;
+      justify-content: space-evenly;
+      align-items: center;
     }
 
      article#header{
@@ -146,7 +156,7 @@ font-family: Helvetica, sans-serif;
 
   section#contact{
     margin:24px;
-    padding:16px 0;
+    
     }
   }
   

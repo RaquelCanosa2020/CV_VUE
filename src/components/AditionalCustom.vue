@@ -48,8 +48,9 @@ button.item{
     width: 25%;
     text-align: center;
     margin: 0rem;
-    border: none;
-    border-bottom: 1px solid rgb(148, 146, 146);
+   
+    border: 0.5px solid rgb(148, 146, 146);
+    border-radius: 0.5rem 0.5rem 0 0; 
     color:rgb(68, 68, 218);
     font-weight: 600;
     font-size: 0.5rem;
@@ -69,9 +70,10 @@ background-color:  lightgray;
 
 article{
     border: 1px solid rgb(148, 146, 146);
-    border-top: 0;
+    
     padding: 0.5rem;
     width: 100%;    
+    border-radius: 0 0.5rem 0.5rem 0.5rem; 
 }
 
 article > p{

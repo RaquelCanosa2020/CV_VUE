@@ -65,7 +65,7 @@ div.courseData p{
     margin-left: 20px;
 }
 
-mg#courseImage{
+img#courseImage{
         width: 60px;
     }
 

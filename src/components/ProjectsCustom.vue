@@ -7,8 +7,8 @@
 
             <technologiescustom :techs="project.techs" />
 
-            <button class="info" @click="getWord(index)" v-if="aditional !== index">INFO ></button>
-            <button class="info" @click="getWord(index)" v-if="aditional === index">Ocultar ></button>
+            <button class="info" @click="getWord(index)" v-if="aditional !== index">Info ></button>
+            <button class="info" @click="getWord(index)" v-if="aditional === index">Ocultar</button>
             <a class="linkproject" target="_blank" v-show="project.links.video !== '#'" :href="project.links.video">Vídeo ></a>
             <a class="linkproject" target="_blank" v-show="project.links.code !== '#'" :href="project.links.code">Código ></a>
             <a class="linkproject" target="_blank" v-show="project.links.web !== '#'" :href="project.links.web">Web ></a>
@@ -56,26 +56,29 @@ export default {
 div.oneproject{
   padding: 0.5rem;  
   margin-bottom: 1rem;
-  border: 1px solid lightgray;
+  
 }
 
 button.info, a.linkproject{
   font-size: 0.7rem;
   color: rgb(68, 68, 218);
   margin: 0 0.5rem;
+  text-decoration: none;
+  
 }
 
 button.info:hover, a.linkproject:hover{
   color: rgb(198,58,28);
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 
 }
 
 button.info{
   border: none;
   background-color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 0;
 }
 
@@ -84,6 +87,7 @@ button.info{
 
   button.info, a.linkproject{
   font-size: 1rem;
+    text-decoration: none;
 }
 }
 
@@ -91,6 +95,7 @@ button.info{
 
     button#info, a.linkproject{
     font-size: 1rem;
+      text-decoration: none;
   }
     
 }

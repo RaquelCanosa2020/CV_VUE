@@ -7,8 +7,8 @@
       <section id="objective">
       
         <h3>
-          <img src="../assets/orientacion.png" alt="diana"/>
-         <span> Objetivo profesional </span>
+          
+        Objetivo profesional 
         </h3>
         <p>
           Desarrollarme como programadora y/o tester, formando parte de un equipo al que pueda aportar las habilidades adquiridas por mi experiencia profesional
@@ -19,61 +19,60 @@
 
       <section id="aptitudes">
        <h3>
-          <img src="../assets/idea.png" alt="bombilla"/> <span>Aptitudes</span>
+         Aptitudes
         </h3>
         <aptitudcustom :aptitudes="aptitudes"/>
       </section>
 
     </div>
 
-    <div class="group">
-
-      <section>
-      <h3>
-          <img src="../assets/codificacion.png" alt="pantalla con código"/> <span>Formación programación / testing</span>
-        </h3>
-        <trainingcustom :courses="programming" />
-      </section>
-
-      <section>
-       <h3>
-          <img src="../assets/libro-electronico.png" alt="libro-electronico"/> <span>Otra formación</span>
-        </h3>
-
-        <trainingcustom :courses="anotherStudies"/>
+   
+    <section>
     
        <h3>
-          <img src="../assets/traducir.png" alt="letras" /> <span>Idiomas</span>
-        </h3>
-
-        <languajescustom :langs="languajes"/>
-      </section>
-
-    </div>
-
-    <div class="group">
-
-      <section>
-        <h3>
-          <img src="../assets/startup.png" alt="pantalla con cohete"/> <span>Prácticas Programación</span>
-        </h3>
-
-        <projectscustom :projects="projects"/>
-    
-      </section>
-      
-      <section>
-    
-       <h3>
-          <img src="../assets/maleta.png" alt="maletin"/> <span>Experiencia profesional</span>
+          Experiencia profesional
 
 
         </h3>
         <experiencecustom :experiences="experiences"/>
        
       </section>
+      <section>
+      <h3>
+         Formación relevante
+        </h3>
+        <trainingcustom :courses="programming" />
+      </section>
+
+  <!--
+
+      <section>
+        <h3>
+          Prácticas Programación
+        </h3>
+
+        <projectscustom :projects="projects"/> 
     
-    </div>
+      </section>-->
+      <section>
+       <h3>
+         Otra formación
+        </h3>
+
+        <trainingcustom :courses="anotherStudies"/>
+        </section>
+      <section>
+    
+       <h3>
+        Idiomas
+        </h3>
+
+        <languajescustom :langs="languajes"/>
+      </section>
+      
+      
+    
+    
     
   </div>
   
@@ -84,7 +83,7 @@ import aptitudcustom from "@/components/AptitudCustom";
 import trainingcustom from "@/components/TrainingCustom";
 import languajescustom from "@/components/LanguajesCustom";
 import experiencecustom from "@/components/ExperienceCustom";
-import projectscustom from "@/components/ProjectsCustom";
+//import projectscustom from "@/components/ProjectsCustom";
 
 import {aptitudes, programming, anotherStudies, languajes, experience, projects} from "@/api/api.js";
 
@@ -96,7 +95,7 @@ export default {
     trainingcustom,
     languajescustom,
     experiencecustom,
-    projectscustom
+   // projectscustom
   },
   data(){
     return{
@@ -113,12 +112,11 @@ export default {
 </script>
 
 <style scoped>
-img{
-  width: 30px;
-}
+
 
 h3{
-  border-bottom: 2px solid  rgb(68, 68, 218);
+  color: rgb(68, 68, 218);
+  
 }
 
 
@@ -132,29 +130,43 @@ section{
     padding: 1rem;
   }
 
-  img{
-    width: 40px;
-  }
+  
 }
 
 @media (min-width: 1025px){
   div.group{
     display: flex;
+    
     margin:0;
   }
 
-  section{
+  div.group1 {
+
+    width: 100%;
+  }
+
+  div.group section{
     width: 50%;
     margin-top: 1rem;
   }
 
-  section#experience{
+  section{
     width: 100%;
+    display:flex;
+  }
+
+  section#objective, section#aptitudes {
+
+    flex-direction: column;
   }
 
   img{
     width: 50px;
 }
+  h3{
+
+    width: 500px;
+  }
 }
 
 
