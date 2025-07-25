@@ -14,7 +14,7 @@
                     <p v-if="course.techs">
                         <technologiescustom :techs="course.techs"/>
                     </p>
-                    <p v-if="course.image">
+                    <p id="courseImage" v-if="course.image">
                        <a :href="course.link"> <img id="courseImage" :src="course.image"/></a>
                        </p>
                     
@@ -55,13 +55,14 @@ li{
 
 p#left{
     margin-right: 0.5rem;
+    
 }
 
 div.courseData{
     display: flex;
 }
 
-div.courseData p{
+div.courseData p#courseImage{
     margin-left: 20px;
 }
 

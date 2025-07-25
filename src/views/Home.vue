@@ -11,8 +11,7 @@
         Objetivo profesional 
         </h3>
         <p>
-          Desarrollarme como programadora y/o tester, formando parte de un equipo al que pueda aportar las habilidades adquiridas por mi experiencia profesional
-          anterior.
+          Continuar desarrollándome como QA tester, avanzando hacia la automatización de pruebas. También estoy interesada en trabajar como programadora
         </p>
       
       </section>

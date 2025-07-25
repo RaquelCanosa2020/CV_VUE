@@ -6,7 +6,7 @@ const aptitudes = ["Trabajo en equipo",
 const programming = [
 
     {
-        year: "En curso (28%)", title: "Ciclo Superior Desarrollo Web.", data: "IES Fernando Wirtz.",techs:["JAVA", "HTML","CSS","XML"], 
+        year: "----", title: "Ciclo Superior Desarrollo Web.", data: "IES Fernando Wirtz (en progreso 28%)",techs:["JAVA", "HTML","CSS","XML"], 
     },
 
     {
