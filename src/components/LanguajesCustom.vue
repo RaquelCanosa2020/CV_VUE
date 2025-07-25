@@ -3,12 +3,32 @@
         <ul>
             <li v-for=" lang in langs" :key="lang.id">
 
-               <article>
-                    <p> {{lang.languaje}}</p>
-                    <p> {{lang.level}}</p>
-                </article>
+                <section>
 
-                <levelcustom :level="lang.level"/>
+               <article>
+                    <p class="pill"> {{lang.languaje}}</p>
+                    <p class="pill">{{lang.level}}</p>
+                     
+                </article>
+                
+
+                <!--<levelcustom :level="lang.level"/>-->
+
+                <div id="data">
+                
+                
+                <p>{{ lang.data }}</p>
+                <p>{{ lang.description }}</p>
+                </div>
+               
+
+                </section>
+
+                <section></section>
+
+                
+                
+                
 
             </li>
         </ul> 
@@ -16,9 +36,9 @@
 </template>
 
 <script>
-import levelcustom from '@/components/LevelCustom.vue'
+//import levelcustom from '@/components/LevelCustom.vue'
 export default {
-    components: {levelcustom},
+    //components: {levelcustom},
     name: "languajescustom",
     props:{
         langs: Array,
@@ -35,8 +55,28 @@ ul{
 
 li{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 1rem;
+}
+
+section{
+
+    display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+#data{
+
+    display:flex;
+    flex-direction: column;
+}
+
+#data > p {
+
+    margin:0;
 }
 
 article{
@@ -50,10 +90,10 @@ article{
     width: 60px;
 }
 
-p{
+p.pill{
     font-weight: 600;
     margin-right: 5px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 @media (min-width: 700px){
@@ -62,8 +102,8 @@ p{
         width: 90px;
     }
 
-    p{       
-        font-size: 1rem;
+    p.pill{       
+        font-size: 0.9rem;
     }
 }
 
@@ -73,9 +113,12 @@ p{
         width: 150px;
     }
 
-    p{
-        font-size: 1.5rem;
-    }
     
+    li{
+        margin-top: 2rem;
+    }
+    p.pill{       
+        font-size: 1.2rem;
+    }
 }
 </style>

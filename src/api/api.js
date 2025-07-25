@@ -6,66 +6,66 @@ const aptitudes = ["Trabajo en equipo",
 const programming = [
 
     {
-        year: "----", title: "Ciclo Superior Desarrollo Web.", data: "IES Fernando Wirtz (en progreso 28%)",techs:["JAVA", "HTML","CSS","XML"], 
+        year: "****", title: "Ciclo Superior Desarrollo Web.", data: "IES Fernando Wirtz (en progreso 28%)",techs:["JAVA", "HTML","CSS","XML"], 
     },
 
     {
-        year: "2023", title: "Certified Tester Foundation Level (CTFL).", data: "ISTQB.",techs:["Pruebas de Software"], image:require("../assets/istqb90px.png"), link:"https://www.credly.com/badges/05da2f16-55f7-4375-bb7d-ac4adbda0bd8/public_url"
+        year: "2023", title: "Certified Tester Foundation Level (CTFL).", data: "ISTQB",techs:["Pruebas de Software"], image:require("../assets/istqb90px.png"), link:"https://www.credly.com/badges/05da2f16-55f7-4375-bb7d-ac4adbda0bd8/public_url"
     },
     
   
     {
-        year: "2020", title: "Bootcamp de Programación Full Stack Javascript.", data: "Hack a Boss (400 horas).", techs:[
+        year: "2020", title: "Bootcamp de Programación Full Stack Javascript.", data: "Hack a Boss (400 horas)", techs:[
             "HTML", "CSS", "Javascript", "MySQL", "VUE", "NODE"]
     },
     {
-        year: "2016", title: "Técnico Superior Prevención Riesgos Laborales.", data: "Univ. Camilo José Cela."
+        year: "2016", title: "Técnico Superior Prevención Riesgos Laborales.", data: "Univ. Camilo José Cela"
     },    
     {
-        year: "2015", title: "Máster en Calidad y Medioambiente.", data: "Escuela Internacional de Negocios."
+        year: "2015", title: "Máster en Calidad y Medioambiente.", data: "Escuela Internacional de Negocios"
     },
     {
-        year: "1997", title: "Licenciada en CC. Químicas.", data: "Universidade da Coruña."
+        year: "1997", title: "Licenciada en CC. Químicas.", data: "Universidade da Coruña"
     }
 ];
 
 const anotherStudies= [
     {
-        year: "2025", title: "Karate DSL: API Automation and Performance from Zero to Hero", data: "Udemy."
+        year: "2025", title: "Karate DSL: API Automation and Performance from Zero to Hero.", data: "Udemy"
     },
 
     {
-        year: "2022", title: "Cypres: Automatización de pruebas de punta a punta.", data: "Udemy."
+        year: "2022", title: "Cypres: Automatización de pruebas de punta a punta.", data: "Udemy"
     },
     
     {
-        year: "2020", title: "REACT.", data: "Hack a Boss."
+        year: "2020", title: "REACT.", data: "Hack a Boss"
     }
     
 ];
 
 const languajes = [
     {
-        languaje: "Inglés:", level: "B2"
+        languaje: "Inglés", level: "B2", data:"Escuela Oficial de Idiomas", description:"Escritura y lectura"
     },
     {
-        languaje: "Alemán:", level: "A1"
+        languaje: "Alemán", level: "A1", data: "Centro de Linguas Universidade da Coruña", description:"Nociones básicas"
     },
     
 ];
 
 const experience = [
     {
-        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester.",techs:["Test manual", "SQL Server", "M.Azure", "Postman", "Métodología Agile", "Karate Framework"]
+        period: "Ene.2021 - Actualidad", name: "Tecnologías Plexus", description: "QA Tester",techs:["Test manual", "SQL Server", "M.Azure", "Postman", "Métodología Agile", "Karate Framework"]
     },
     {
-        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad y Medioambiente, entre otros.",techs:[]
+        period: "Feb.2016 - Nov.2019", name: "PFS Grupo", description: "Consultoría Calidad y Medioambiente, entre otros",techs:[]
     },
     {
-        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest.", description: "Consultoría Calidad y Mediambiente, entre otros",techs:[]
+        period: "Feb.2001 - Nov.2014", name: "AT Innovaxest", description: "Consultoría Calidad y Mediambiente, entre otros",techs:[]
     },
     {
-        period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad.",techs:[]
+        period: "Feb.2000 - Ene.2001", name: "Teais, S.A.", description: "Responsable de Calidad",techs:[]
     }
 ];
 
